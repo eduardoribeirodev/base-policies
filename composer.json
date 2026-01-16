@@ -1,0 +1,25 @@
+{
+    "name": "eduardoribeirodev/base-policies",
+    "autoload": {
+        "psr-4": {
+            "EduardoRibeiroDev\\BasePolicies\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eduardo Ribeiro",
+            "email": "eduribeiro.films@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "laravel/laravel": "^12.11",
+        "spatie/laravel-permission": "^6.24"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EduardoRibeiroDev\\BasePolicies\\BasePoliciesServiceProvider"
+            ]
+        }
+    }
+}
