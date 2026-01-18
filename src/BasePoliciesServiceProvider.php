@@ -3,6 +3,7 @@
 namespace EduardoRibeiroDev\BasePolicies;
 
 use EduardoRibeiroDev\BasePolicies\Console\Commands\GeneratePermissionsCommand;
+use EduardoRibeiroDev\BasePolicies\Console\Commands\GivePermissionCommand;
 use Illuminate\Support\ServiceProvider;
 use EduardoRibeiroDev\BasePolicies\Console\Commands\MakeBasePolicyCommand;
 use EduardoRibeiroDev\BasePolicies\Console\Commands\GeneratePoliciesCommand;
@@ -34,6 +35,7 @@ class BasePoliciesServiceProvider extends ServiceProvider
                 MakeBasePolicyCommand::class,
                 GeneratePoliciesCommand::class,
                 GeneratePermissionsCommand::class,
+                GivePermissionCommand::class,
             ]);
         }
     }

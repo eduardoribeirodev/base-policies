@@ -113,7 +113,7 @@ class BasePoliciesService
     /**
      * Check if user has permission for the given action.
      */
-    public function checkPermission(User $user, Model|string $model, string $action): bool
+    public function checkPermission(User $user, string $action, Model|string $model): bool
     {
         if ($this->isAdmin($user)) {
             return true;

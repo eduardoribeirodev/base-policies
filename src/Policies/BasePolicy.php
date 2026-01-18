@@ -17,37 +17,37 @@ abstract class BasePolicy
 
     public function viewAny(User $user): bool
     {
-        return BasePolicies::checkPermission($user, static::getModel(), "viewAny");
+        return BasePolicies::checkPermission($user, "viewAny", static::getModel());
     }
 
     public function view(User $user): bool
     {
-        return BasePolicies::checkPermission($user, static::getModel(), "view");
+        return BasePolicies::checkPermission($user, "view", static::getModel());
     }
 
     public function create(User $user): bool
     {
-        return BasePolicies::checkPermission($user, static::getModel(), "create");
+        return BasePolicies::checkPermission($user, "create", static::getModel());
     }
 
     public function update(User $user): bool
     {
-        return BasePolicies::checkPermission($user, static::getModel(), "update");
+        return BasePolicies::checkPermission($user, "update", static::getModel());
     }
 
     public function delete(User $user): bool
     {
-        return BasePolicies::checkPermission($user, static::getModel(), "delete");
+        return BasePolicies::checkPermission($user, "delete", static::getModel());
     }
 
     public function restore(User $user): bool
     {
-        return BasePolicies::checkPermission($user, static::getModel(), "restore");
+        return BasePolicies::checkPermission($user, "restore", static::getModel());
     }
 
     public function forceDelete(User $user): bool
     {
-        return BasePolicies::checkPermission($user, static::getModel(), "forceDelete");
+        return BasePolicies::checkPermission($user, "forceDelete", static::getModel());
     }
 
     /**
