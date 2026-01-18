@@ -31,7 +31,7 @@ class GivePermissionCommand extends Command
     public function handle()
     {
         $userId = $this->argument('user_id');
-        $permissions = $this->argument('permissions');
+        $permissions = explode(',', $this->argument('permissions'));
 
         // Find the user
         $user = User::find($userId);
